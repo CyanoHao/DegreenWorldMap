@@ -1,0 +1,41 @@
+# Reforged Old Continents
+12	Kalimdor
+13	Eastern Kindoms
+101	Outland
+113	Northrend
+424	Pandaria
+
+# Battle for Azeroth
+862	Zuldazar
+863	Nazmir
+864	Vol'dun
+875	Zandalar
+876	Kul Tiras
+895	Tiragarde Sound
+896	Drustvar
+942	Stormsong Valley
+947	Azeroth
+1161	Boralus
+1165	Dazar'alor
+1355	Nazjatar
+1462	Mechagon Island
+
+# Shadowlands
+1525	Revendreth
+1533	Bastion
+1536	Maldraxxus
+1543	The Maw
+1550	The Shadow Lands
+1565	Ardenweald
+1961	Korthia
+1970	Zereth Mortis
+
+# Dragonflight
+1978	The Dragon Isles
+2022	The Waking Shores
+2023	Ohn’ahran Plains
+2024	The Azure Span
+2025	Thaldraszus
+2093	The Nokhud Offensive (Ohn’ahran Plains)
+2107	The Forbidden Reach
+2112	Valdrakken
