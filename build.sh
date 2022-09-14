@@ -37,10 +37,9 @@ function GenerateMapTile() {
 		# split to 3×2 2048×2048 tiles
 		for row in 0 1 ; do
 			for col in 0 1 2 ; do
-				magick $tempFile2 -crop 2048x2048+$((2048*$col))+$((2048*row)) -quality 80 $outDir/$(($row*3+$col)).jpg &
+				magick $tempFile2 -crop 2048x2048+$((2048*$col))+$((2048*row)) -quality 80 $outDir/$(($row*3+$col)).jpg
 			done
 		done
-		wait
 	else
 		# FSR 1002×668 → 1754×1170 → 3072×2048
 		bin/FidelityFX_CLI.exe -Mode EASU -Scale 1754 1170 gallery/$mapFile $tempFile1
@@ -62,7 +61,10 @@ function GenerateAllMap() {
 	local line
 	local mapID
 	local mapFile
+	local nCPU=$(nproc)
+	local running=0
 	while read line ; do
+		(( ++running % nCPU == 0 )) && wait
 		mapID=$(cut -f1 <<<$line)
 		mapFile=$(cut -f2 <<<$line)
 		GenerateMapTile $mapID $mapFile &
