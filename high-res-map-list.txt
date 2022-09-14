@@ -39,3 +39,4 @@
 2093	The Nokhud Offensive (Ohn’ahran Plains)
 2107	The Forbidden Reach
 2112	Valdrakken
+2118	The Forbidden Reach (Dracthyr starting area)
