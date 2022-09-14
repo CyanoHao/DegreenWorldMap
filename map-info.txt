@@ -14,6 +14,7 @@
 2081	Neltharus_B.png
 2082	HallsOfInfusion_A.png
 2083	HallsOfInfusion_B.png
+2085	PrimalistTomorow.png	# misspell by design to match CASC filename
 2094	RubyLifePools_B.png
 2095	RubyLifePools_A.png
 2093	PlainsofOhnahra.merged.png
@@ -24,3 +25,12 @@
 2106	BrackenhideHollow_A.png
 2107	TheForbiddenReach.merged.png
 2112	Valdrakken.png
+2118	TheForbiddenReach.merged.png
+2119	PrimalistRaid_A.png
+2120	PrimalistRaid_B.png
+2121	PrimalistRaid_C.png
+2122	PrimalistRaid_D.png
+2123	PrimalistRaid_E.png
+2124	PrimalistRaid_G.png
+2125	PrimalistRaid_H.png
+2126	PrimalistRaid_F.png
