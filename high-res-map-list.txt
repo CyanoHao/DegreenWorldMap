@@ -36,7 +36,8 @@
 2023	Ohn’ahran Plains
 2024	The Azure Span
 2025	Thaldraszus
+2026	The Forbidden Reach
 2093	The Nokhud Offensive (Ohn’ahran Plains)
-2107	The Forbidden Reach
+2107	The Forbidden Reach (historical ID in Beta)
 2112	Valdrakken
 2118	The Forbidden Reach (Dracthyr starting area)

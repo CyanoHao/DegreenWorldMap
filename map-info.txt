@@ -1,10 +1,7 @@
-1978	DragonIsles.png
 2022	TheWakingShores.merged.png
 2023	PlainsofOhnahra.merged.png
 2024	TheAzureSpan.merged.png
 2025	Thaldraszus.merged.png
-2071	Uldaman_upres_A.png
-2072	Uldaman_upres_B.png
 2073	ArcaneNexus_A.png
 2074	ArcaneNexus_B.png
 2075	ArcaneNexus_C.png
@@ -23,9 +20,8 @@
 2098	DragonAcademy_B.png
 2099	DragonAcademy_C.png
 2106	BrackenhideHollow_A.png
-2107	TheForbiddenReach.merged.png
+2109	ForbiddenReach_Micro_WarCreche.png
 2112	Valdrakken.png
-2118	TheForbiddenReach.merged.png
 2119	PrimalistRaid_A.png
 2120	PrimalistRaid_B.png
 2121	PrimalistRaid_C.png
