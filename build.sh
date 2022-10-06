@@ -17,38 +17,17 @@ function GenerateOverrideMapListLua() {
 function GenerateMapTile() {
 	local mapID=$1
 	local mapFile=$2
-	local dim=$(magick identify gallery/$2 | grep -oE " [0-9]+x[0-9]+ ")
+	local dim=$(magick identify gallery/$mapFile | grep -oE " [0-9]+x[0-9]+ ")
 	local height=${dim#*x}
-	local tempFile1=$(mktemp --suffix=.png)
-	local tempFile2=$(mktemp --suffix=.png)
 	local outDir=DegreenWorldMap/Tiles/$mapID
 	mkdir -p $outDir
-
-	if (( $height > 2048 )) ; then
-		# FSR 3840×2560 → 6144×4096
-		bin/FidelityFX_CLI.exe -Mode EASU -Scale 6144 4096 gallery/$mapFile $tempFile1
-		bin/FidelityFX_CLI.exe -Mode RCAS -Sharpness 0.2 $tempFile1 $tempFile2
-		# split to 3×2 2048×2048 tiles
-		for row in 0 1 ; do
-			for col in 0 1 2 ; do
-				magick $tempFile2 -crop 2048x2048+$((2048*$col))+$((2048*row)) -quality 80 $outDir/$(($row*3+$col)).jpg
-			done
-		done
+	if (( $height == 2560 )) ; then
+		# 3840×2560, split to 15x10 256x256 tiles
+		magick gallery/$mapFile -crop 256x256 -quality 80 $outDir/%d.jpg
 	else
-		# FSR 1002×668 → 1754×1170 → 3072×2048
-		bin/FidelityFX_CLI.exe -Mode EASU -Scale 1754 1170 gallery/$mapFile $tempFile1
-		bin/FidelityFX_CLI.exe -Mode RCAS -Sharpness 0.2 $tempFile1 $tempFile2
-		bin/FidelityFX_CLI.exe -Mode EASU -Scale 3072 2048 $tempFile2 $tempFile1
-		bin/FidelityFX_CLI.exe -Mode RCAS -Sharpness 0.2 $tempFile1 $tempFile2
-		# split to 3×2 1024×1024 tiles
-		for row in 0 1 ; do
-			for col in 0 1 2 ; do
-				magick $tempFile2 -crop 1024x1024+$((1024*$col))+$((1024*row)) -quality 80 $outDir/$(($row*3+$col)).jpg
-			done
-		done
+		# 1002×668, extend to 1024x768 and then split to 4x3 256x256 tiles
+		magick gallery/$mapFile -background black -extent 1024x768 -crop 256x256 -quality 80 $outDir/%d.jpg
 	fi
-	rm $tempFile1
-	rm $tempFile2
 }
 
 function GenerateAllMap() {

@@ -12,12 +12,9 @@ Note: this addon works by adding enUS map tiles to world map frame and thus may 
 
 ## How to Build
 
-This addon is developed on Linux. Building on Windows is not tested.
+This addon can be built on Linux (incl. WSL) or MSYS2. macOS is not supported for the assumption of GNU utils.
 
 Dependencies:
-* Wine for FidelityFX CLI, AMD’s image upscaling tool based on FidelityFX Super Resolution (FSR).
-  * Wine is not required when using WSL – Windows programs will seamlessly run on host OS.
-  * DXVK recommended (while wined3d also work).
 * ImageMagick, image processing tool.
 * zip.
 

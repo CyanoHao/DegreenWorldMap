@@ -9,15 +9,17 @@ function RefreshOverlaysHook(pin, fullUpdate)
 	local mapArtLayerInfo = C_Map.GetMapArtLayers(mapID)[1]
 	local width = mapArtLayerInfo.layerWidth
 	local height = mapArtLayerInfo.layerHeight
+	local nCols = ceil(width / 256)
+	local nRows = ceil(height / 256)
 
-	for row = 0, 1 do
-		for col = 0, 2 do
+	for row = 0, nRows - 1 do
+		for col = 0, nCols - 1 do
 			local texture = pin.overlayTexturePool:Acquire()
-			texture:SetWidth(width / 3)
-			texture:SetHeight(height / 2)
+			texture:SetWidth(256)
+			texture:SetHeight(256)
 			texture:SetTexCoord(0, 1, 0, 1)
-			texture:SetPoint("TOPLEFT", width * col / 3, -height * row / 2)
-			texture:SetTexture("Interface/AddOns/DegreenWorldMap/Tiles/" .. mapID .. "/" .. (row * 3 + col) .. ".jpg" , nil, nil, "TRILINEAR")
+			texture:SetPoint("TOPLEFT", 256 * col, -256 * row)
+			texture:SetTexture("Interface/AddOns/DegreenWorldMap/Tiles/" .. mapID .. "/" .. (row * nCols + col) .. ".jpg" , nil, nil, "TRILINEAR")
 
 			texture:SetDrawLayer("ARTWORK", 1)
 			texture:Show()
