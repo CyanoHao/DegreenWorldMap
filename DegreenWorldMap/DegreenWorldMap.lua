@@ -6,8 +6,9 @@ function RefreshOverlaysHook(pin, fullUpdate)
 	-- print("mapID = " .. mapID)
 	if not OverrideMapList[mapID] then return end
 
-	local width = HighResMapList[mapID] and 3840 or 1002
-	local height = HighResMapList[mapID] and 2560 or 668
+	local mapArtLayerInfo = C_Map.GetMapArtLayers(mapID)[1]
+	local width = mapArtLayerInfo.layerWidth
+	local height = mapArtLayerInfo.layerHeight
 
 	for row = 0, 1 do
 		for col = 0, 2 do

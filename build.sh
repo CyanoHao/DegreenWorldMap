@@ -6,13 +6,6 @@ function Clean() {
 	rm -r DegreenWorldMap/Tiles/
 }
 
-function GenerateHighResMapListLua() {
-	local highResMapListLua=DegreenWorldMap/HighResMapList.lua
-	echo "HighResMapList = {" >$highResMapListLua
-	awk '{ if (int($1)) { print "\t[" $1 "] = true," } }' <high-res-map-list.txt >>$highResMapListLua
-	echo "}" >>$highResMapListLua
-}
-
 function GenerateOverrideMapListLua() {
 	set -e
 	local overrideMapListLua=DegreenWorldMap/OverrideMapList.lua
@@ -24,13 +17,14 @@ function GenerateOverrideMapListLua() {
 function GenerateMapTile() {
 	local mapID=$1
 	local mapFile=$2
-	local highRes=$(grep "^$mapID" high-res-map-list.txt)
+	local dim=$(magick identify gallery/$2 | grep -oE " [0-9]+x[0-9]+ ")
+	local height=${dim#*x}
 	local tempFile1=$(mktemp --suffix=.png)
 	local tempFile2=$(mktemp --suffix=.png)
 	local outDir=DegreenWorldMap/Tiles/$mapID
 	mkdir -p $outDir
 
-	if [[ -n $highRes ]] ; then
+	if (( $height > 2048 )) ; then
 		# FSR 3840×2560 → 6144×4096
 		bin/FidelityFX_CLI.exe -Mode EASU -Scale 6144 4096 gallery/$mapFile $tempFile1
 		bin/FidelityFX_CLI.exe -Mode RCAS -Sharpness 0.2 $tempFile1 $tempFile2
@@ -80,7 +74,6 @@ function Package() {
 }
 
 Clean
-GenerateHighResMapListLua
 GenerateOverrideMapListLua
 GenerateAllMap <map-info.txt
 Package
