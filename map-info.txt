@@ -8,7 +8,10 @@
 2197	DawnoftheInfinite_H.png
 2198	DawnoftheInfinite_Key.png
 2199	Thaldraszus_Timeways.png
+2201	TimeWays_BlackEmpire.png
 2202	TimeWays_Demons.png
 2203	Timeways_Scourge.png
+2204	TimeWays_Murlocs.png
 2205	Timeways_Titans.png
+2206	Timeways_Robot.png
 2207	Timeways_HordeAlliance.png
