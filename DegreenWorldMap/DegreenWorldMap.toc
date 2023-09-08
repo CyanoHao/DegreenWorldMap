@@ -1,8 +1,8 @@
-## Interface: 100107
+## Interface: 100200
 ## Title: Degreen World Map
 ## Title-zhCN: 去除世界地图绿色
 ## Title-zhTW: 去除世界地圖綠色
-## Version: 50793.0
+## Version: 51239.0
 
 OverrideMapList.lua
 DegreenWorldMap.lua
