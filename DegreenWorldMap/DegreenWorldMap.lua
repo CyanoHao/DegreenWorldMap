@@ -1,4 +1,4 @@
-if GetLocale() == "enUS" then return end
+-- if GetLocale() == "enUS" then return end
 
 function RefreshOverlaysHook(pin, fullUpdate)
 	local mapID = pin:GetMap():GetMapID()
