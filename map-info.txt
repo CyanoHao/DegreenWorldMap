@@ -49,3 +49,10 @@
 2328	KhazAlgar_Proscenium.png
 2330	SacredFlame_A.png
 2335	Cinderbrew_Meadery.png
+2339	Dornogal.png
+2341	Stonevault_Foundry_A.png
+2343	Nerubar.png
+2344	CityOfThreadsDungeon_B.png
+2345	EarthenBattleground.png
+2347	Delve_Nerubian_04A.png
+2348	Delve_ZekvirsLair_01_A.png
