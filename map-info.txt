@@ -2,7 +2,7 @@
 2214	EarthenWorks.png
 2215	ArathorCanyons.png
 2216	Nerubar_Lower.png
-2248	KhazAlgar.png
+2248	IsleOfDorn.png
 2249	Delve_Fungarian_01A.png
 2250	Delve_Kobolds_01A.png
 2251	Delve_Kobolds_02A.png
@@ -10,12 +10,7 @@
 2256	AzjKahet_Lower.png
 2259	Delve_Kobyss_02A.png
 2269	Delve_Earthcrawl_01A.png
-2270	Nerubar.png
-2271	KhazAlgar.png
-2272	EarthenWorks.png
-2273	ArathorCanyons.png
 2274	11_Continent.png
-2276	11_Continent.png
 2277	Delve_Nightfall_01A.png
 2291	NerubianPalaceRaid_B.png
 2292	NerubianPalaceRaid_A.png
@@ -56,3 +51,6 @@
 2345	EarthenBattleground.png
 2347	Delve_Nerubian_04A.png
 2348	Delve_ZekvirsLair_01_A.png
+2357	CityOfEchos_A.png
+2358	CityofEchos_B.png
+2359	Dawnbreaker.png
