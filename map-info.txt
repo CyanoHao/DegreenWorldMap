@@ -1,5 +1,3 @@
-2213	Nerubar.png
-2216	Nerubar_Lower.png
 2249	Delve_Fungarian_01A.png
 2250	Delve_Kobolds_01A.png
 2251	Delve_Kobolds_02A.png
@@ -28,6 +26,4 @@
 2344	CityOfThreadsDungeon_B.png
 2347	Delve_Nerubian_04A.png
 2348	Delve_ZekvirsLair_01_A.png
-2357	CityOfEchos_A.png
-2358	CityofEchos_B.png
-2359	Dawnbreaker.png
+2367	vaultOfMemory.png

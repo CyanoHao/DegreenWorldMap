@@ -2,7 +2,7 @@
 ## Title: Degreen World Map
 ## Title-zhCN: 去除世界地图绿色
 ## Title-zhTW: 去除世界地圖綠色
-## Version: 55288.0
+## Version: 55399.0
 
 OverrideMapList.lua
 DegreenWorldMap.lua
