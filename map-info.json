@@ -1,0 +1,426 @@
+[
+  {
+    "id": 2351,
+    "basename": "Horde_HD"
+  },
+  {
+    "id": 2352,
+    "basename": "Alliance_HD"
+  },
+  {
+    "id": 2393,
+    "basename": "SilvermoonEK"
+  },
+  {
+    "id": 2395,
+    "basename": "EversongWoodsEK"
+  },
+  {
+    "id": 2397,
+    "basename": "VoidLandsBG"
+  },
+  {
+    "id": 2405,
+    "basename": "Voidstorm"
+  },
+  {
+    "id": 2413,
+    "basename": "Harandar"
+  },
+  {
+    "id": 2424,
+    "basename": "NewQuelDanas"
+  },
+  {
+    "id": 2432,
+    "basename": "NewQuelDanas"
+  },
+  {
+    "id": 2433,
+    "basename": "MurderRow_A",
+    "localization": {
+      "languages": ["zhCN", "zhTW"],
+      "entries": {
+        "Murder Row": {
+          "fontSize": 28,
+          "position": [515, 42],
+          "zhCN": "谋 杀 小 径",
+          "zhTW": "謀 殺 小 徑"
+        }
+      }
+    }
+  },
+  {
+    "id": 2434,
+    "basename": "MurderRow_C",
+    "localization": {
+      "languages": ["zhCN", "zhTW"],
+      "entries": {
+        "Murder Row": {
+          "fontSize": 28,
+          "position": [515, 42],
+          "zhCN": "谋 杀 小 径",
+          "zhTW": "謀 殺 小 徑"
+        }
+      }
+    }
+  },
+  {
+    "id": 2435,
+    "basename": "MurderRow_B",
+    "localization": {
+      "languages": ["zhCN", "zhTW"],
+      "entries": {
+        "Murder Row": {
+          "fontSize": 28,
+          "position": [515, 42],
+          "zhCN": "谋 杀 小 径",
+          "zhTW": "謀 殺 小 徑"
+        }
+      }
+    }
+  },
+  {
+    "id": 2437,
+    "basename": "NewZulAman"
+  },
+  {
+    "id": 2443,
+    "basename": "SilvermoonFinScenario"
+  },
+  {
+    "id": 2444,
+    "basename": "VoidLandsBG"
+  },
+  {
+    "id": 2479,
+    "basename": "Voidstorm"
+  },
+  {
+    "id": 2480,
+    "basename": "Harandar"
+  },
+  {
+    "id": 2492,
+    "basename": "WindrunnerSpire_A",
+    "localization": {
+      "languages": ["zhCN", "zhTW"],
+      "entries": {
+        "Windrunner Spire": {
+          "fontSize": 28,
+          "position": [515, 53],
+          "zhCN": "风 行 者 高 塔",
+          "zhTW": "風 行 者 高 塔"
+        },
+        "The Promenade": {
+          "fontSize": 16,
+          "position": [635, 245],
+          "zhCN": "步道",
+          "zhTW": "步道"
+        }
+      }
+    }
+  },
+  {
+    "id": 2493,
+    "basename": "WindrunnerSpire_B",
+    "localization": {
+      "languages": ["zhCN", "zhTW"],
+      "entries": {
+        "Windrunner Spire": {
+          "fontSize": 28,
+          "position": [515, 53],
+          "zhCN": "风 行 者 高 塔",
+          "zhTW": "風 行 者 高 塔"
+        },
+        "Vereesa's Repose": {
+          "fontSize": 16,
+          "position": [620, 360],
+          "zhCN": "温蕾萨的住所",
+          "zhTW": "溫蕾莎的住所"
+        }
+      }
+    }
+  },
+  {
+    "id": 2494,
+    "basename": "WindrunnerSpire_C",
+    "localization": {
+      "languages": ["zhCN", "zhTW"],
+      "entries": {
+        "Windrunner Spire": {
+          "fontSize": 28,
+          "position": [515, 53],
+          "zhCN": "风 行 者 高 塔",
+          "zhTW": "風 行 者 高 塔"
+        },
+        "Vereesa's Repose": {
+          "fontSize": 16,
+          "position": [640, 230],
+          "zhCN": "温蕾萨的住所",
+          "zhTW": "溫蕾莎的住所"
+        }
+      }
+    }
+  },
+  {
+    "id": 2496,
+    "basename": "WindrunnerSpire_D",
+    "localization": {
+      "languages": ["zhCN", "zhTW"],
+      "entries": {
+        "Windrunner Spire": {
+          "fontSize": 28,
+          "position": [515, 53],
+          "zhCN": "风 行 者 高 塔",
+          "zhTW": "風 行 者 高 塔"
+        },
+        "Vereesa's Repose": {
+          "fontSize": 16,
+          "position": [360, 235],
+          "zhCN": "希尔瓦娜斯的住所",
+          "zhTW": "希爾瓦娜斯的住所"
+        }
+      }
+    }
+  },
+  {
+    "id": 2497,
+    "basename": "WindrunnerSpire_E",
+    "localization": {
+      "languages": ["zhCN", "zhTW"],
+      "entries": {
+        "Windrunner Spire": {
+          "fontSize": 28,
+          "position": [515, 53],
+          "zhCN": "风 行 者 高 塔",
+          "zhTW": "風 行 者 高 塔"
+        },
+        "Sylvanas's Quarters": {
+          "fontSize": 16,
+          "position": [720, 240],
+          "zhCN": "希尔瓦娜斯的住所",
+          "zhTW": "希爾瓦娜斯的住所"
+        }
+      }
+    }
+  },
+  {
+    "id": 2498,
+    "basename": "WindrunnerSpire_F",
+    "localization": {
+      "languages": ["zhCN", "zhTW"],
+      "entries": {
+        "Windrunner Spire": {
+          "fontSize": 28,
+          "position": [515, 53],
+          "zhCN": "风 行 者 高 塔",
+          "zhTW": "風 行 者 高 塔"
+        },
+        "Windrunner Vault": {
+          "fontSize": 16,
+          "position": [640, 230],
+          "zhCN": "风行者宝库",
+          "zhTW": "風行者寶庫"
+        }
+      }
+    }
+  },
+  {
+    "id": 2499,
+    "basename": "WindrunnerSpire_G",
+    "localization": {
+      "languages": ["zhCN", "zhTW"],
+      "entries": {
+        "Windrunner Spire": {
+          "fontSize": 28,
+          "position": [515, 53],
+          "zhCN": "风 行 者 高 塔",
+          "zhTW": "風 行 者 高 塔"
+        },
+        "The Pinnacle": {
+          "fontSize": 16,
+          "position": [735, 180],
+          "zhCN": "塔顶",
+          "zhTW": "塔頂"
+        }
+      }
+    }
+  },
+  {
+    "id": 2500,
+    "basename": "LightbloomDungeon"
+  },
+  {
+    "id": 2501,
+    "basename": "MaisaraCavernsDungeon"
+  },
+  {
+    "id": 2502,
+    "basename": "Delve_Voidholme_A"
+  },
+  {
+    "id": 2503,
+    "basename": "Delve_TwilightCrypts_A"
+  },
+  {
+    "id": 2504,
+    "basename": "Delve_TwilightCrypts_B"
+  },
+  {
+    "id": 2505,
+    "basename": "Delve_GulfOfMemory_A"
+  },
+  {
+    "id": 2506,
+    "basename": "Delve_ShadowguardPoint"
+  },
+  {
+    "id": 2507,
+    "basename": "Delve_TormentsRise_A"
+  },
+  {
+    "id": 2510,
+    "basename": "Delve_Fungarians_Grudge_A"
+  },
+  {
+    "id": 2511,
+    "basename": "12_Magisters_Terrace_EXT"
+  },
+  {
+    "id": 2513,
+    "basename": "ProveYourWorth_A"
+  },
+  {
+    "id": 2514,
+    "basename": "ProveYourWorth_B"
+  },
+  {
+    "id": 2515,
+    "basename": "12_MagistersTerrace_A"
+  },
+  {
+    "id": 2516,
+    "basename": "12_MagistersTerrace_B"
+  },
+  {
+    "id": 2517,
+    "basename": "12_MagistersTerrace_C"
+  },
+  {
+    "id": 2518,
+    "basename": "12_MagistersTerrace_D"
+  },
+  {
+    "id": 2519,
+    "basename": "12_MagistersTerrace_E"
+  },
+  {
+    "id": 2520,
+    "basename": "12_MagistersTerrace_F"
+  },
+  {
+    "id": 2522,
+    "basename": "Rootlands_Micro_Mega_A"
+  },
+  {
+    "id": 2523,
+    "basename": "Rootlands_Micro_Mega_B"
+  },
+  {
+    "id": 2525,
+    "basename": "Delve_TwilightTunnels_A",
+    "localization": {
+      "languages": ["zhCN", "zhTW"],
+      "entries": {
+        "The Darkway": {
+          "fontSize": 28,
+          "position": [515, 42],
+          "zhCN": "黑 魔 法 回 廊",
+          "zhTW": "黑 魔 法 迴 廊"
+        }
+      }
+    }
+  },
+  {
+    "id": 2526,
+    "basename": "Voidlands_Micro_Abundance_A"
+  },
+  {
+    "id": 2527,
+    "basename": "Voidlands_Micro_Abundance_B"
+  },
+  {
+    "id": 2528,
+    "basename": "Delve_Sunkiller_A"
+  },
+  {
+    "id": 2529,
+    "basename": "VoidspireRaid_A"
+  },
+  {
+    "id": 2530,
+    "basename": "VoidspireRaid_B"
+  },
+  {
+    "id": 2531,
+    "basename": "DreamriftRaid_A"
+  },
+  {
+    "id": 2532,
+    "basename": "DreamriftRaid_B"
+  },
+  {
+    "id": 2533,
+    "basename": "DarkwellRaid_A"
+  },
+  {
+    "id": 2534,
+    "basename": "DarkwellRaid_B"
+  },
+  {
+    "id": 2535,
+    "basename": "AtalAmanCity"
+  },
+  {
+    "id": 2536,
+    "basename": "AtalAmanCity"
+  },
+  {
+    "id": 2537,
+    "basename": "EK_Midnight_Continent",
+    "localization": {
+      "languages": ["zhCN", "zhTW"],
+      "entries": {
+        "Voidstorm": {
+          "fontSize": 92,
+          "position": [2050, 815],
+          "zhCN": "虚无风暴",
+          "zhTW": "虛無風暴"
+        },
+        "Harandar": {
+          "fontSize": 92,
+          "position": [3140, 630],
+          "zhCN": "哈兰达",
+          "zhTW": "哈蘭達"
+        }
+      }
+    }
+  },
+  {
+    "id": 2540,
+    "basename": "Delve_Sunkiller_A"
+  },
+  {
+    "id": 2541,
+    "basename": "Arcantina"
+  },
+  {
+    "id": 2545,
+    "basename": "Delve_Parhelion"
+  },
+  {
+    "id": 2547,
+    "basename": "Delve_Calamity"
+  }
+]

@@ -1,4 +1,13 @@
+# build artifacts
 /DegreenWorldMap/Tiles/
 /DegreenWorldMap/HighResMapList.lua
 /DegreenWorldMap/OverrideMapList.lua
 /DegreenWorldMap-*.zip
+
+# generated map
+/gallery/zhCN/*.png
+/gallery/zhTW/*.png
+
+# python
+__pycache__
+venv
