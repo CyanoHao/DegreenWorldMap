@@ -1,17 +1,16 @@
--- if GetLocale() == 'enUS' then return end
+if GetLocale() == 'enUS' then return end
 
 function RefreshOverlaysHook(pin, fullUpdate)
   local mapID = pin:GetMap():GetMapID()
   if not mapID then return end
-  print('mapID = ' .. mapID)
+  -- print('mapID = ' .. mapID)
   local overrideMapInfo = OverrideMapList[mapID] or {}
   local enable = overrideMapInfo.enable
   if not enable then return end
 
   -- resolve tile path
   local tilePath = 'Interface/AddOns/DegreenWorldMap/Tiles/' .. mapID
-  -- local locale = GetLocale()
-  local locale = 'zhCN'
+  local locale = GetLocale()
   local enableLocalized = overrideMapInfo[locale]
   print('enableLocalized = ')
   print(enableLocalized)
