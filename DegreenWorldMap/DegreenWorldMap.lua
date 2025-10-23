@@ -12,11 +12,8 @@ function RefreshOverlaysHook(pin, fullUpdate)
   local tilePath = 'Interface/AddOns/DegreenWorldMap/Tiles/' .. mapID
   local locale = GetLocale()
   local enableLocalized = overrideMapInfo[locale]
-  print('enableLocalized = ')
-  print(enableLocalized)
   if enableLocalized then
     tilePath = tilePath .. '/' .. locale
-    print('tilePath =' .. tilePath)
   end
 
   local mapArtLayerInfo = C_Map.GetMapArtLayers(mapID)[1]

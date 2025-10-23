@@ -42,10 +42,11 @@
       "languages": ["zhCN", "zhTW"],
       "entries": {
         "Murder Row": {
+          "title": true,
           "fontSize": 28,
           "position": [515, 42],
-          "zhCN": "谋 杀 小 径",
-          "zhTW": "謀 殺 小 徑"
+          "zhCN": "密 谋 小 径",
+          "zhTW": "兇 殺 路"
         }
       }
     }
@@ -57,10 +58,11 @@
       "languages": ["zhCN", "zhTW"],
       "entries": {
         "Murder Row": {
+          "title": true,
           "fontSize": 28,
           "position": [515, 42],
-          "zhCN": "谋 杀 小 径",
-          "zhTW": "謀 殺 小 徑"
+          "zhCN": "密 谋 小 径",
+          "zhTW": "兇 殺 路"
         }
       }
     }
@@ -72,10 +74,11 @@
       "languages": ["zhCN", "zhTW"],
       "entries": {
         "Murder Row": {
+          "title": true,
           "fontSize": 28,
           "position": [515, 42],
-          "zhCN": "谋 杀 小 径",
-          "zhTW": "謀 殺 小 徑"
+          "zhCN": "密 谋 小 径",
+          "zhTW": "兇 殺 路"
         }
       }
     }
@@ -107,16 +110,17 @@
       "languages": ["zhCN", "zhTW"],
       "entries": {
         "Windrunner Spire": {
+          "title": true,
           "fontSize": 28,
           "position": [515, 53],
-          "zhCN": "风 行 者 高 塔",
-          "zhTW": "風 行 者 高 塔"
+          "zhCN": "风 行 者 之 塔",
+          "zhTW": "風 行 者 塔"
         },
         "The Promenade": {
-          "fontSize": 16,
+          "fontSize": 18,
           "position": [635, 245],
-          "zhCN": "步道",
-          "zhTW": "步道"
+          "zhCN": "望塔步道",
+          "zhTW": "漫步尖塔"
         }
       }
     }
@@ -128,16 +132,17 @@
       "languages": ["zhCN", "zhTW"],
       "entries": {
         "Windrunner Spire": {
+          "title": true,
           "fontSize": 28,
           "position": [515, 53],
-          "zhCN": "风 行 者 高 塔",
-          "zhTW": "風 行 者 高 塔"
+          "zhCN": "风 行 者 之 塔",
+          "zhTW": "風 行 者 塔"
         },
         "Vereesa's Repose": {
-          "fontSize": 16,
+          "fontSize": 18,
           "position": [620, 360],
-          "zhCN": "温蕾萨的住所",
-          "zhTW": "溫蕾莎的住所"
+          "zhCN": "温蕾萨之憩",
+          "zhTW": "凡蕾莎之憩"
         }
       }
     }
@@ -149,16 +154,17 @@
       "languages": ["zhCN", "zhTW"],
       "entries": {
         "Windrunner Spire": {
+          "title": true,
           "fontSize": 28,
           "position": [515, 53],
-          "zhCN": "风 行 者 高 塔",
-          "zhTW": "風 行 者 高 塔"
+          "zhCN": "风 行 者 之 塔",
+          "zhTW": "風 行 者 塔"
         },
         "Vereesa's Repose": {
-          "fontSize": 16,
+          "fontSize": 18,
           "position": [640, 230],
-          "zhCN": "温蕾萨的住所",
-          "zhTW": "溫蕾莎的住所"
+          "zhCN": "温蕾萨之憩",
+          "zhTW": "凡蕾莎之憩"
         }
       }
     }
@@ -170,16 +176,17 @@
       "languages": ["zhCN", "zhTW"],
       "entries": {
         "Windrunner Spire": {
+          "title": true,
           "fontSize": 28,
           "position": [515, 53],
-          "zhCN": "风 行 者 高 塔",
-          "zhTW": "風 行 者 高 塔"
+          "zhCN": "风 行 者 之 塔",
+          "zhTW": "風 行 者 塔"
         },
         "Vereesa's Repose": {
-          "fontSize": 16,
+          "fontSize": 18,
           "position": [360, 235],
-          "zhCN": "希尔瓦娜斯的住所",
-          "zhTW": "希爾瓦娜斯的住所"
+          "zhCN": "希尔瓦娜斯的营房",
+          "zhTW": "希瓦娜斯閨房"
         }
       }
     }
@@ -191,16 +198,17 @@
       "languages": ["zhCN", "zhTW"],
       "entries": {
         "Windrunner Spire": {
+          "title": true,
           "fontSize": 28,
           "position": [515, 53],
-          "zhCN": "风 行 者 高 塔",
-          "zhTW": "風 行 者 高 塔"
+          "zhCN": "风 行 者 之 塔",
+          "zhTW": "風 行 者 塔"
         },
         "Sylvanas's Quarters": {
-          "fontSize": 16,
+          "fontSize": 18,
           "position": [720, 240],
-          "zhCN": "希尔瓦娜斯的住所",
-          "zhTW": "希爾瓦娜斯的住所"
+          "zhCN": "希尔瓦娜斯的营房",
+          "zhTW": "希瓦娜斯閨房"
         }
       }
     }
@@ -212,14 +220,15 @@
       "languages": ["zhCN", "zhTW"],
       "entries": {
         "Windrunner Spire": {
+          "title": true,
           "fontSize": 28,
           "position": [515, 53],
-          "zhCN": "风 行 者 高 塔",
-          "zhTW": "風 行 者 高 塔"
+          "zhCN": "风 行 者 之 塔",
+          "zhTW": "風 行 者 塔"
         },
         "Windrunner Vault": {
-          "fontSize": 16,
-          "position": [640, 230],
+          "fontSize": 18,
+          "position": [785, 235],
           "zhCN": "风行者宝库",
           "zhTW": "風行者寶庫"
         }
@@ -233,16 +242,17 @@
       "languages": ["zhCN", "zhTW"],
       "entries": {
         "Windrunner Spire": {
+          "title": true,
           "fontSize": 28,
           "position": [515, 53],
-          "zhCN": "风 行 者 高 塔",
-          "zhTW": "風 行 者 高 塔"
+          "zhCN": "风 行 者 之 塔",
+          "zhTW": "風 行 者 塔"
         },
         "The Pinnacle": {
-          "fontSize": 16,
+          "fontSize": 18,
           "position": [735, 180],
-          "zhCN": "塔顶",
-          "zhTW": "塔頂"
+          "zhCN": "尖塔顶峰",
+          "zhTW": "尖塔區"
         }
       }
     }
@@ -334,10 +344,11 @@
       "languages": ["zhCN", "zhTW"],
       "entries": {
         "The Darkway": {
+          "title": true,
           "fontSize": 28,
           "position": [515, 42],
-          "zhCN": "黑 魔 法 回 廊",
-          "zhTW": "黑 魔 法 迴 廊"
+          "zhCN": "黑 暗 回 廊",
+          "zhTW": "黑 暗 地 道"
         }
       }
     }
@@ -395,14 +406,14 @@
         "Voidstorm": {
           "fontSize": 92,
           "position": [2050, 815],
-          "zhCN": "虚无风暴",
+          "zhCN": "虚影风暴",
           "zhTW": "虛無風暴"
         },
         "Harandar": {
           "fontSize": 92,
           "position": [3140, 630],
-          "zhCN": "哈兰达",
-          "zhTW": "哈蘭達"
+          "zhCN": "哈籁恩达尔",
+          "zhTW": "哈郎達"
         }
       }
     }
@@ -422,5 +433,17 @@
   {
     "id": 2547,
     "basename": "Delve_Calamity"
+  },
+  {
+    "id": 2556,
+    "basename": "Nexus_Point_Xenas_A"
+  },
+  {
+    "id": 2557,
+    "basename": "12_LegionCommandCenter_A"
+  },
+  {
+    "id": 2558,
+    "basename": "12_LegionCommandCenter_B"
   }
 ]
