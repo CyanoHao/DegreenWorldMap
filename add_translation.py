@@ -7,115 +7,123 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 FONT_PATH = "font/ARLishuU30-Medium.ttf"
 font_cache = {}
 
-def generate_text_image(text, output_path, font_size=48, is_title=False):
-    canvas_size = (500, 100)
-    image = Image.new('RGBA', canvas_size, (0, 0, 0, 0))
-    draw = ImageDraw.Draw(image)
+def calculate_bbox(text, font: ImageFont.FreeTypeFont):
+    return font.getbbox(text)
 
+def draw_text_on_image(background, text, position, font_size=48, style="normal"):
     if font_size not in font_cache:
         font_cache[font_size] = ImageFont.truetype(FONT_PATH, font_size)
     font = font_cache[font_size]
 
-    bbox = draw.textbbox((0, 0), text, font=font)
+    bbox = calculate_bbox(text, font)
     text_width = bbox[2] - bbox[0]
     text_height = bbox[3] - bbox[1]
 
-    x = (canvas_size[0] - text_width) // 2
-    y = (canvas_size[1] - text_height) // 2
+    x, y = position
+    text_x = int(x - text_width/2)
+    # 0.15 for baseline
+    text_y = int(y - text_height/2 - 0.15 * text_height)
 
-    padding = 20
     diff_unit = font_size / 80
 
-    if is_title:
+    if style == "ribbon":
         shadow_color = (64, 32, 16, 255)
         mask_color = (255, 255, 255, 255)
 
-        # shadow with gaussian blur
-        shadow_size = (text_width + padding * 2, text_height + padding * 2)
-        shadow_img = Image.new('RGBA', shadow_size, (0, 0, 0, 0))
-        shadow_draw = ImageDraw.Draw(shadow_img)
-        shadow_draw.text((padding + diff_unit, padding + diff_unit), text, font=font, fill=shadow_color, stroke_width= 6 * diff_unit, stroke_fill = shadow_color)
-        blurred_shadow = shadow_img.filter(ImageFilter.GaussianBlur(radius = 3 * diff_unit))
-        image.paste(blurred_shadow, (x - padding, y - padding), blurred_shadow)
+        # shadow with gaussian blur directly on overlay
+        overlay = Image.new('RGBA', background.size, (0, 0, 0, 0))
+        draw = ImageDraw.Draw(overlay)
+        shadow_x = text_x + diff_unit
+        shadow_y = text_y + diff_unit
+        draw.text((shadow_x, shadow_y), text, font = font, fill = shadow_color,
+                  stroke_width = 6 * diff_unit, stroke_fill = shadow_color)
+        overlay = overlay.filter(ImageFilter.GaussianBlur(radius = 3 * diff_unit))
+        draw = ImageDraw.Draw(overlay)
 
-        # main text (as mask)
+        # text mask for gradient
+        padding = int(font_size / 2)
         text_mask = Image.new('RGBA', (text_width + 2 * padding, text_height + 2 * padding), (0, 0, 0, 0))
         text_draw = ImageDraw.Draw(text_mask)
-        text_draw.text((padding, padding), text, font=font, fill=mask_color, stroke_width=diff_unit, stroke_fill=mask_color)
+        text_draw.text((padding, padding), text, font = font, fill = mask_color,
+                       stroke_width = diff_unit, stroke_fill = mask_color)
 
         mask_bbox = text_mask.getbbox()
-        mask_width = mask_bbox[2] - mask_bbox[0]
-        mask_height = mask_bbox[3] - mask_bbox[1]
-        mask_left = mask_bbox[0]
-        mask_top = mask_bbox[1]
+        if mask_bbox:
+            mask_width = mask_bbox[2] - mask_bbox[0]
+            mask_height = mask_bbox[3] - mask_bbox[1]
+            mask_left = mask_bbox[0]
+            mask_top = mask_bbox[1]
 
-        # gradient
-        # 0%: (240, 208, 16)
-        # 65%: (240, 152 ,16)
-        # 100%: (208, 144, 16)
-        gradient = Image.new('RGBA', (mask_width, mask_height), (0, 0, 0, 0))
-        grad_draw = ImageDraw.Draw(gradient)
-        for i in range(mask_height):
-            gradient_factor = i / mask_height
-            if gradient_factor <= 0.65:
-                # From 0% to 65%: (240, 208, 16) to (240, 152, 16)
-                factor = gradient_factor / 0.65
-                r = int(240)
-                g = int(208 - (208 - 152) * factor)
-                b = int(16)
-            else:
-                # From 65% to 100%: (240, 152, 16) to (208, 144, 16)
-                factor = (gradient_factor - 0.65) / 0.35
-                r = int(240 - (240 - 208) * factor)
-                g = int(152 - (152 - 144) * factor)
-                b = int(16)
-            grad_draw.line([(0, i), (mask_width, i)], fill=(r, g, b, 255))
+            # create gradient
+            gradient = Image.new('RGBA', (mask_width, mask_height), (0, 0, 0, 0))
+            grad_draw = ImageDraw.Draw(gradient)
+            for i in range(mask_height):
+                gradient_factor = i / mask_height
+                if gradient_factor <= 0.65:
+                    # from 0% to 65%: (240, 208, 16) to (240, 152, 16)
+                    factor = gradient_factor / 0.65
+                    r = int(240)
+                    g = int(208 - (208 - 152) * factor)
+                    b = int(16)
+                else:
+                    # from 65% to 100%: (240, 152, 16) to (208, 144, 16)
+                    factor = (gradient_factor - 0.65) / 0.35
+                    r = int(240 - (240 - 208) * factor)
+                    g = int(152 - (152 - 144) * factor)
+                    b = int(16)
+                grad_draw.line([(0, i), (mask_width, i)], fill=(r, g, b, 255))
 
-        # text with gradient
-        gradient_padded = Image.new('RGBA', (text_width + 2 * padding, text_height + 2 * padding), (0, 0, 0, 0))
-        gradient_padded.paste(gradient, (mask_left, mask_top))
-        final_text = Image.composite(gradient_padded, Image.new('RGBA', (text_width + 2 * padding, text_height + 2 * padding), (0, 0, 0, 0)), text_mask)
-        image.paste(final_text, (x - padding, y - padding), final_text)
-    else:
-        scale = (font_size - 16) / (96 - 16)
-        glow_color = (255, 224, 0, 224)
+            # apply gradient to text
+            gradient_padded = Image.new('RGBA', (text_width + 2 * padding, text_height + 2 * padding), (0, 0, 0, 0))
+            gradient_padded.paste(gradient, (mask_left, mask_top))
+            final_text = Image.composite(gradient_padded, Image.new('RGBA', (text_width + 2 * padding, text_height + 2 * padding), (0, 0, 0, 0)), text_mask)
+
+            # Paste final text to overlay
+            temp_final_text_canvas = Image.new('RGBA', overlay.size, (0, 0, 0, 0))
+            temp_final_text_canvas.paste(final_text, (text_x - padding, text_y - padding))
+            overlay = Image.alpha_composite(overlay, temp_final_text_canvas)
+
+    elif style in ['hd', 'hd-glow']:
+        glow_color = (255, 224, 128, 128)
+        stroke_color = (255, 224, 128, 192)
         text_color = (102, 67, 20, 255)
 
         # glow (heavy stroke + gaussian blur)
-        glow_size = (text_width + padding * 2, text_height + padding * 2)
-        glow_img = Image.new('RGBA', glow_size, (0, 0, 0, 0))
-        glow_draw = ImageDraw.Draw(glow_img)
-        glow_draw.text((padding, padding), text, font=font, fill=glow_color, stroke_width = (12 - 6 * scale) * diff_unit, stroke_fill=glow_color)
-        blurred = glow_img.filter(ImageFilter.GaussianBlur(radius = (4 - 2 * scale) * diff_unit))
-        image.paste(blurred, (x - padding, y - padding), blurred)
+        overlay = Image.new('RGBA', background.size, (*glow_color[:3], 0))
+        draw = ImageDraw.Draw(overlay)
+        if style == 'hd-glow':
+            draw.text((text_x, text_y), text, font = font, fill = glow_color,
+                      stroke_width = 40 * diff_unit, stroke_fill = glow_color)
+            overlay = overlay.filter(ImageFilter.GaussianBlur(radius = 30 * diff_unit))
+            draw = ImageDraw.Draw(overlay)
+
+        # stroke
+        draw.text((text_x, text_y), text, font = font, fill = stroke_color,
+                  stroke_width = 5 * diff_unit, stroke_fill = stroke_color)
 
         # main text
-        text_img = Image.new('RGBA', (text_width + 2 * padding, text_height + 2 * padding), (0, 0, 0, 0))
-        text_draw = ImageDraw.Draw(text_img)
-        text_draw.text((padding, padding), text, font=font, fill=text_color, stroke_width = diff_unit, stroke_fill=text_color)
-        image.paste(text_img, (x - padding, y - padding), text_img)
+        draw.text((text_x, text_y), text, font = font, fill = text_color,
+                  stroke_width = diff_unit, stroke_fill = text_color)
 
-    bbox = image.getbbox()
-    if bbox:
-        image = image.crop(bbox)
+    else:  # style == "normal"
+        glow_color = (255, 224, 128, 192)
+        text_color = (102, 67, 20, 255)
 
-    image.save(output_path, 'PNG')
+        # glow (heavy stroke + gaussian blur)
+        overlay = Image.new('RGBA', background.size, (*glow_color[:3], 0))
+        draw = ImageDraw.Draw(overlay)
+        draw.text((text_x, text_y), text, font = font, fill = glow_color,
+                  stroke_width=40 * diff_unit, stroke_fill = glow_color)
+        overlay = overlay.filter(ImageFilter.GaussianBlur(radius = 30 * diff_unit))
+        draw = ImageDraw.Draw(overlay)
 
-def composite_text_on_background(background_path, text, output_path, position, font_size=48, is_title=False):
-    temp_text_path = 'temp_text.png'
-    generate_text_image(text, temp_text_path, font_size, is_title)
+        # main text
+        draw.text((text_x, text_y), text, font=font, fill=text_color, 
+                  stroke_width=diff_unit, stroke_fill=text_color)
 
-    background = Image.open(background_path).convert('RGBA')
-    text_image = Image.open(temp_text_path).convert('RGBA')
-
-    text_width, text_height = text_image.size
-    x, y = position
-    paste_position = (int(x - text_width/2), int(y - text_height/2))
-    temp_background = background.copy()
-    temp_background.paste(text_image, paste_position, text_image)
-    background = Image.alpha_composite(background, temp_background)
-    background.save(output_path, 'PNG')
-    os.remove(temp_text_path)
+    # Composite the overlay onto the background
+    result = Image.alpha_composite(background, overlay)
+    return result
 
 def process_localization_entries(basename, map_id, localization_info):
     background_dir = 'gallery/background'
@@ -138,22 +146,9 @@ def process_localization_entries(basename, map_id, localization_info):
                 if lang in entry_info:
                     text = entry_info[lang]
                     position = entry_info['position']
-                    font_size = entry_info.get('fontSize', 48)
-                    is_title = entry_info.get('title', False)  # Check if this is a title
+                    font_size = entry_info['fontSize']
+                    style = entry_info['style']
 
-                    temp_text_path = 'temp_text.png'
-                    generate_text_image(text, temp_text_path, font_size, is_title)
-                    text_image = Image.open(temp_text_path).convert('RGBA')
-                    text_width, text_height = text_image.size
-                    x, y = position
-                    paste_position = (int(x - text_width/2), int(y - text_height/2))
-                    # Create a temporary image for pasting with proper alpha blending
-                    temp_background = background.copy()
-                    temp_background.paste(text_image, paste_position, text_image)
-                    
-                    # Properly alpha blend the images
-                    background = Image.alpha_composite(background, temp_background)
-
-                    os.remove(temp_text_path)
+                    background = draw_text_on_image(background, text, position, font_size, style)
 
             background.save(output_path, 'PNG')

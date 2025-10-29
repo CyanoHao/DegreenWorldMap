@@ -42,9 +42,9 @@
       "languages": ["zhCN", "zhTW"],
       "entries": {
         "Murder Row": {
-          "title": true,
-          "fontSize": 28,
-          "position": [515, 42],
+          "style": "ribbon",
+          "fontSize": 32,
+          "position": [510, 42],
           "zhCN": "密 谋 小 径",
           "zhTW": "兇 殺 路"
         }
@@ -58,9 +58,9 @@
       "languages": ["zhCN", "zhTW"],
       "entries": {
         "Murder Row": {
-          "title": true,
-          "fontSize": 28,
-          "position": [515, 42],
+          "style": "ribbon",
+          "fontSize": 32,
+          "position": [510, 42],
           "zhCN": "密 谋 小 径",
           "zhTW": "兇 殺 路"
         }
@@ -74,9 +74,9 @@
       "languages": ["zhCN", "zhTW"],
       "entries": {
         "Murder Row": {
-          "title": true,
-          "fontSize": 28,
-          "position": [515, 42],
+          "style": "ribbon",
+          "fontSize": 32,
+          "position": [510, 42],
           "zhCN": "密 谋 小 径",
           "zhTW": "兇 殺 路"
         }
@@ -110,13 +110,14 @@
       "languages": ["zhCN", "zhTW"],
       "entries": {
         "Windrunner Spire": {
-          "title": true,
-          "fontSize": 28,
-          "position": [515, 53],
+          "style": "ribbon",
+          "fontSize": 32,
+          "position": [510, 51],
           "zhCN": "风 行 者 之 塔",
           "zhTW": "風 行 者 塔"
         },
         "The Promenade": {
+          "style": "normal",
           "fontSize": 18,
           "position": [635, 245],
           "zhCN": "望塔步道",
@@ -132,13 +133,14 @@
       "languages": ["zhCN", "zhTW"],
       "entries": {
         "Windrunner Spire": {
-          "title": true,
-          "fontSize": 28,
-          "position": [515, 53],
+          "style": "ribbon",
+          "fontSize": 32,
+          "position": [510, 51],
           "zhCN": "风 行 者 之 塔",
           "zhTW": "風 行 者 塔"
         },
         "Vereesa's Repose": {
+          "style": "normal",
           "fontSize": 18,
           "position": [620, 360],
           "zhCN": "温蕾萨之憩",
@@ -154,13 +156,14 @@
       "languages": ["zhCN", "zhTW"],
       "entries": {
         "Windrunner Spire": {
-          "title": true,
-          "fontSize": 28,
-          "position": [515, 53],
+          "style": "ribbon",
+          "fontSize": 32,
+          "position": [510, 51],
           "zhCN": "风 行 者 之 塔",
           "zhTW": "風 行 者 塔"
         },
         "Vereesa's Repose": {
+          "style": "normal",
           "fontSize": 18,
           "position": [640, 230],
           "zhCN": "温蕾萨之憩",
@@ -176,13 +179,14 @@
       "languages": ["zhCN", "zhTW"],
       "entries": {
         "Windrunner Spire": {
-          "title": true,
-          "fontSize": 28,
-          "position": [515, 53],
+          "style": "ribbon",
+          "fontSize": 32,
+          "position": [510, 51],
           "zhCN": "风 行 者 之 塔",
           "zhTW": "風 行 者 塔"
         },
-        "Vereesa's Repose": {
+        "Sylvanas's Quarters": {
+          "style": "normal",
           "fontSize": 18,
           "position": [360, 235],
           "zhCN": "希尔瓦娜斯的营房",
@@ -198,13 +202,14 @@
       "languages": ["zhCN", "zhTW"],
       "entries": {
         "Windrunner Spire": {
-          "title": true,
-          "fontSize": 28,
-          "position": [515, 53],
+          "style": "ribbon",
+          "fontSize": 32,
+          "position": [510, 51],
           "zhCN": "风 行 者 之 塔",
           "zhTW": "風 行 者 塔"
         },
         "Sylvanas's Quarters": {
+          "style": "normal",
           "fontSize": 18,
           "position": [720, 240],
           "zhCN": "希尔瓦娜斯的营房",
@@ -220,13 +225,14 @@
       "languages": ["zhCN", "zhTW"],
       "entries": {
         "Windrunner Spire": {
-          "title": true,
-          "fontSize": 28,
-          "position": [515, 53],
+          "style": "ribbon",
+          "fontSize": 32,
+          "position": [510, 51],
           "zhCN": "风 行 者 之 塔",
           "zhTW": "風 行 者 塔"
         },
         "Windrunner Vault": {
+          "style": "normal",
           "fontSize": 18,
           "position": [785, 235],
           "zhCN": "风行者宝库",
@@ -242,13 +248,14 @@
       "languages": ["zhCN", "zhTW"],
       "entries": {
         "Windrunner Spire": {
-          "title": true,
-          "fontSize": 28,
-          "position": [515, 53],
+          "style": "ribbon",
+          "fontSize": 32,
+          "position": [510, 51],
           "zhCN": "风 行 者 之 塔",
           "zhTW": "風 行 者 塔"
         },
         "The Pinnacle": {
+          "style": "normal",
           "fontSize": 18,
           "position": [735, 180],
           "zhCN": "尖塔顶峰",
@@ -344,8 +351,8 @@
       "languages": ["zhCN", "zhTW"],
       "entries": {
         "The Darkway": {
-          "title": true,
-          "fontSize": 28,
+          "style": "ribbon",
+          "fontSize": 32,
           "position": [515, 42],
           "zhCN": "黑 暗 回 廊",
           "zhTW": "黑 暗 地 道"
@@ -403,17 +410,47 @@
     "localization": {
       "languages": ["zhCN", "zhTW"],
       "entries": {
+        "Isle of Quel'Danas": {
+          "style": "hd-glow",
+          "fontSize": 120,
+          "position": [860, 500],
+          "zhCN": "奎尔丹纳斯岛",
+          "zhTW": "奎爾達納斯之島"
+        },
+        "Eversong Woods": {
+          "style": "hd-glow",
+          "fontSize": 120,
+          "position": [700, 1480],
+          "zhCN": "永歌森林",
+          "zhTW": "永歌森林"
+        },
+        "Zul'Aman": {
+          "style": "hd-glow",
+          "fontSize": 120,
+          "position": [1880, 1780],
+          "zhCN": "祖阿曼",
+          "zhTW": "祖阿曼"
+        },
         "Voidstorm": {
-          "fontSize": 92,
+          "style": "hd",
+          "fontSize": 84,
           "position": [2050, 815],
           "zhCN": "虚影风暴",
           "zhTW": "虛無風暴"
         },
         "Harandar": {
-          "fontSize": 92,
+          "style": "hd",
+          "fontSize": 84,
           "position": [3140, 630],
           "zhCN": "哈籁恩达尔",
           "zhTW": "哈郎達"
+        },
+        "Silvermoon": {
+          "style": "ribbon",
+          "fontSize": 72,
+          "position": [1090, 1112],
+          "zhCN": "银 月 城",
+          "zhTW": "銀 月 城"
         }
       }
     }
