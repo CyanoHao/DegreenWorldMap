@@ -21,7 +21,103 @@
   },
   {
     "id": 2405,
-    "basename": "Voidstorm"
+    "basename": "Voidstorm",
+    "localization": {
+      "languages": ["zhCN", "zhTW"],
+      "entries": {
+        "Voidscar Arena": {
+          "style": "normal",
+          "fontSize": 60,
+          "position": [1800, 270],
+          "zhCN": "虚痕竞技场",
+          "zhTW": "虛痕競技場"
+        },
+        "Hate Spire": {
+          "style": "normal",
+          "fontSize": 60,
+          "position": [1295, 610],
+          "zhCN": "憎恨尖塔",
+          "zhTW": "憎惡尖塔"
+        },
+        "Shadowguard Point": {
+          "style": "normal",
+          "fontSize": 60,
+          "position": [1280, 920],
+          "zhCN": "影卫营",
+          "zhTW": "影衛崗哨"
+        },
+        "Grief Spire": {
+          "style": "normal",
+          "fontSize": 60,
+          "position": [2515, 910],
+          "zhCN": "哀痛尖塔",
+          "zhTW": "悲慟尖塔"
+        },
+        "Nexus-Point Antius": {
+          "style": "normal",
+          "fontSize": 60,
+          "position": [865, 1250],
+          "zhCN": "节点安提乌斯",
+          "zhTW": "奧核點安提厄斯"
+        },
+        "Master's Perch": {
+          "style": "normal",
+          "fontSize": 60,
+          "position": [1780, 1190],
+          "zhCN": "主宰者之座",
+          "zhTW": "主宰棲所"
+        },
+        "The Voidspire": {
+          "style": "normal",
+          "fontSize": 60,
+          "position": [2290, 1255],
+          "zhCN": "虚影尖塔",
+          "zhTW": "虛無尖塔"
+        },
+        "The Ingress": {
+          "style": "normal",
+          "fontSize": 60,
+          "position": [1485, 1550],
+          "zhCN": "破境之地",
+          "zhTW": "初始地"
+        },
+        "Nexus-Point Xenas": {
+          "style": "normal",
+          "fontSize": 60,
+          "position": [2760, 1510],
+          "zhCN": "节点希纳斯",
+          "zhTW": "奧核點瑟納斯"
+        },
+        "Stormarion Citadel": {
+          "style": "normal",
+          "fontSize": 60,
+          "position": [880, 1860],
+          "zhCN": "斯托玛兰堡垒",
+          "zhTW": "風瑪利昂堡壘"
+        },
+        "Locus Point": {
+          "style": "normal",
+          "fontSize": 60,
+          "position": [1590, 2010],
+          "zhCN": "方位点",
+          "zhTW": "暗域點"
+        },
+        "Obscurion Citadel": {
+          "style": "normal",
+          "fontSize": 60,
+          "position": [2580, 2110],
+          "zhCN": "胧影堡垒",
+          "zhTW": "朧暗堡壘"
+        },
+        "Nexus-Point Mid'Ar": {
+          "style": "normal",
+          "fontSize": 60,
+          "position": [1270, 2350],
+          "zhCN": "节点米达尔",
+          "zhTW": "奧核點米達爾"
+        }
+      }
+    }
   },
   {
     "id": 2413,
@@ -94,14 +190,6 @@
   {
     "id": 2444,
     "basename": "VoidLandsBG"
-  },
-  {
-    "id": 2479,
-    "basename": "Voidstorm"
-  },
-  {
-    "id": 2480,
-    "basename": "Harandar"
   },
   {
     "id": 2492,
@@ -454,10 +542,6 @@
         }
       }
     }
-  },
-  {
-    "id": 2540,
-    "basename": "Delve_Sunkiller_A"
   },
   {
     "id": 2541,
