@@ -9,11 +9,112 @@
   },
   {
     "id": 2393,
-    "basename": "SilvermoonEK"
+    "basename": "SilvermoonEK",
+    "localization": {
+      "languages": ["zhCN", "zhTW"],
+      "entries": {
+        "Silvermoon": {
+          "style": "ribbon",
+          "fontSize": 120,
+          "position": [2800, 290],
+          "zhCN": "银 月 城",
+          "zhTW": "銀 月 城"
+        }
+      }
+    }
   },
   {
     "id": 2395,
-    "basename": "EversongWoodsEK"
+    "basename": "EversongWoodsEK",
+    "localization": {
+      "languages": ["zhCN", "zhTW"],
+      "entries": {
+        "Sunstrider Isle": {
+          "style": "normal",
+          "fontSize": 60,
+          "position": [1370, 275],
+          "zhCN": "逐日岛",
+          "zhTW": "逐日者之島"
+        },
+        "Brightwing Estate": {
+          "style": "normal",
+          "fontSize": 60,
+          "position": [2575, 720],
+          "zhCN": "明翼庄园",
+          "zhTW": "亮翼莊園"
+        },
+        "Saltheril's Haven": {
+          "style": "normal",
+          "fontSize": 60,
+          "position": [1740, 1280],
+          "zhCN": "萨瑟利尔庄园",
+          "zhTW": "薩瑟里的避風港"
+        },
+        "Thas'minella": {
+          "style": "normal",
+          "fontSize": 60,
+          "position": [2245, 1385],
+          "zhCN": "萨斯米内拉",
+          "zhTW": "薩斯米內拉"
+        },
+        "Sanctum of the Moon": {
+          "style": "normal",
+          "fontSize": 60,
+          "position": [1550, 1700],
+          "zhCN": "月亮圣殿",
+          "zhTW": "明月聖所"
+        },
+        "Sanctum of the Sun": {
+          "style": "normal",
+          "fontSize": 60,
+          "position": [2055, 1830],
+          "zhCN": "太阳圣殿",
+          "zhTW": "太陽聖所"
+        },
+        "Windrunner Spire": {
+          "style": "normal",
+          "fontSize": 60,
+          "position": [1240, 1960],
+          "zhCN": "风行者之塔",
+          "zhTW": "風行者塔"
+        },
+        "Ruins of Deatholme": {
+          "style": "normal",
+          "fontSize": 60,
+          "position": [1570, 2310],
+          "zhCN": "戴索姆废墟",
+          "zhTW": "死亡之域廢墟"
+        },
+        "Silvermoon": {
+          "style": "ribbon",
+          "fontSize": 72,
+          "position": [2010, 805],
+          "zhCN": "银 月 城",
+          "zhTW": "銀 月 城"
+        },
+        "Isle of Quel'Danas": {
+          "style": "hd-lesser-glow",
+          "fontSize": 120,
+          "position": [2800, 270],
+          "zhCN": "奎尔丹纳斯岛",
+          "zhTW": "奎爾達納斯之島"
+        },
+        "Zul'Aman": {
+          "style": "hd-lesser-glow",
+          "fontSize": 120,
+          "position": [2980, 1700],
+          "zhCN": "祖阿曼",
+          "zhTW": "祖阿曼"
+        },
+        "Eastern Plaguelands": {
+          "style": "hd-lesser-glow",
+          "fontSize": 120,
+          "position": [2325, 2460],
+          "zhCN": "东瘟疫之地",
+          "zhTW": "東瘟疫之地"
+        }
+      }
+    }
   },
   {
     "id": 2397,
@@ -499,35 +600,35 @@
       "languages": ["zhCN", "zhTW"],
       "entries": {
         "Isle of Quel'Danas": {
-          "style": "hd-glow",
+          "style": "hd-stroke-glow",
           "fontSize": 120,
           "position": [860, 500],
           "zhCN": "奎尔丹纳斯岛",
           "zhTW": "奎爾達納斯之島"
         },
         "Eversong Woods": {
-          "style": "hd-glow",
+          "style": "hd-stroke-glow",
           "fontSize": 120,
           "position": [700, 1480],
           "zhCN": "永歌森林",
           "zhTW": "永歌森林"
         },
         "Zul'Aman": {
-          "style": "hd-glow",
+          "style": "hd-stroke-glow",
           "fontSize": 120,
           "position": [1880, 1780],
           "zhCN": "祖阿曼",
           "zhTW": "祖阿曼"
         },
         "Voidstorm": {
-          "style": "hd",
+          "style": "hd-stroke",
           "fontSize": 84,
           "position": [2050, 815],
           "zhCN": "虚影风暴",
           "zhTW": "虛無風暴"
         },
         "Harandar": {
-          "style": "hd",
+          "style": "hd-stroke",
           "fontSize": 84,
           "position": [3140, 630],
           "zhCN": "哈籁恩达尔",

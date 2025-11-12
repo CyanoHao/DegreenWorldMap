@@ -83,7 +83,7 @@ def draw_text_on_image(background, text, position, font_size=48, style="normal")
             temp_final_text_canvas.paste(final_text, (text_x - padding, text_y - padding))
             overlay = Image.alpha_composite(overlay, temp_final_text_canvas)
 
-    elif style in ['hd', 'hd-glow']:
+    elif style in ['hd-stroke', 'hd-stroke-glow', 'hd-lesser-glow']:
         glow_color = (255, 224, 128, 128)
         stroke_color = (255, 224, 128, 192)
         text_color = (102, 67, 20, 255)
@@ -91,30 +91,36 @@ def draw_text_on_image(background, text, position, font_size=48, style="normal")
         # glow (heavy stroke + gaussian blur)
         overlay = Image.new('RGBA', background.size, (*glow_color[:3], 0))
         draw = ImageDraw.Draw(overlay)
-        if style == 'hd-glow':
+        if style == 'hd-stroke-glow':
             draw.text((text_x, text_y), text, font = font, fill = glow_color,
-                      stroke_width = 40 * diff_unit, stroke_fill = glow_color)
-            overlay = overlay.filter(ImageFilter.GaussianBlur(radius = 30 * diff_unit))
+                      stroke_width = 20 * diff_unit, stroke_fill = glow_color)
+            overlay = overlay.filter(ImageFilter.GaussianBlur(radius = 10 * diff_unit))
+            draw = ImageDraw.Draw(overlay)
+        elif style == "hd-lesser-glow":
+            draw.text((text_x, text_y), text, font = font, fill = glow_color,
+                      stroke_width = 10 * diff_unit, stroke_fill = glow_color)
+            overlay = overlay.filter(ImageFilter.GaussianBlur(radius = 5 * diff_unit))
             draw = ImageDraw.Draw(overlay)
 
         # stroke
-        draw.text((text_x, text_y), text, font = font, fill = stroke_color,
-                  stroke_width = 5 * diff_unit, stroke_fill = stroke_color)
+        if style in ['hd-stroke', 'hd-stroke-glow']:
+            draw.text((text_x, text_y), text, font = font, fill = stroke_color,
+                      stroke_width = 5 * diff_unit, stroke_fill = stroke_color)
 
         # main text
         draw.text((text_x, text_y), text, font = font, fill = text_color,
                   stroke_width = diff_unit, stroke_fill = text_color)
 
     else:  # style == "normal"
-        glow_color = (255, 224, 128, 192)
+        glow_color = (255, 224, 64, 160)
         text_color = (102, 67, 20, 255)
 
         # glow (heavy stroke + gaussian blur)
         overlay = Image.new('RGBA', background.size, (*glow_color[:3], 0))
         draw = ImageDraw.Draw(overlay)
         draw.text((text_x, text_y), text, font = font, fill = glow_color,
-                  stroke_width=40 * diff_unit, stroke_fill = glow_color)
-        overlay = overlay.filter(ImageFilter.GaussianBlur(radius = 30 * diff_unit))
+                  stroke_width = 20 * diff_unit, stroke_fill = glow_color)
+        overlay = overlay.filter(ImageFilter.GaussianBlur(radius = 10 * diff_unit))
         draw = ImageDraw.Draw(overlay)
 
         # main text
