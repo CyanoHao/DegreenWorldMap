@@ -571,11 +571,35 @@
   },
   {
     "id": 2531,
-    "basename": "DreamriftRaid_A"
+    "basename": "DreamriftRaid_A",
+    "localization": {
+      "languages": ["zhCN", "zhTW"],
+      "entries": {
+        "The Darkway": {
+          "style": "ribbon",
+          "fontSize": 32,
+          "position": [510, 52],
+          "zhCN": "梦 境 裂 隙",
+          "zhTW": "夢 境 裂 隙"
+        }
+      }
+    }
   },
   {
     "id": 2532,
-    "basename": "DreamriftRaid_B"
+    "basename": "DreamriftRaid_B",
+    "localization": {
+      "languages": ["zhCN", "zhTW"],
+      "entries": {
+        "The Darkway": {
+          "style": "ribbon",
+          "fontSize": 32,
+          "position": [510, 52],
+          "zhCN": "梦 境 裂 隙",
+          "zhTW": "夢 境 裂 隙"
+        }
+      }
+    }
   },
   {
     "id": 2533,
@@ -587,7 +611,7 @@
   },
   {
     "id": 2535,
-    "basename": "AtalAmanCity"
+    "basename": "Delve_AtalAman_A"
   },
   {
     "id": 2536,
@@ -667,5 +691,9 @@
   {
     "id": 2558,
     "basename": "12_LegionCommandCenter_B"
+  },
+  {
+    "id": 2564,
+    "basename": "ProveYourWorth_C"
   }
 ]
