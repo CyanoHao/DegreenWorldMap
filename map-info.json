@@ -1,699 +1,102 @@
 [
   {
-    "id": 2351,
-    "basename": "Horde_HD"
+    "id": 13,
+    "basename": "EasternKingdoms"
   },
   {
-    "id": 2352,
-    "basename": "Alliance_HD"
+    "id": 2509,
+    "basename": "UlaTekTemple"
   },
   {
-    "id": 2393,
-    "basename": "SilvermoonEK",
-    "localization": {
-      "languages": ["zhCN", "zhTW"],
-      "entries": {
-        "Silvermoon": {
-          "style": "ribbon",
-          "fontSize": 120,
-          "position": [2800, 290],
-          "zhCN": "银 月 城",
-          "zhTW": "銀 月 城"
-        }
-      }
-    }
-  },
-  {
-    "id": 2395,
-    "basename": "EversongWoodsEK",
-    "localization": {
-      "languages": ["zhCN", "zhTW"],
-      "entries": {
-        "Sunstrider Isle": {
-          "style": "normal",
-          "fontSize": 60,
-          "position": [1370, 275],
-          "zhCN": "逐日岛",
-          "zhTW": "逐日者之島"
-        },
-        "Brightwing Estate": {
-          "style": "normal",
-          "fontSize": 60,
-          "position": [2575, 720],
-          "zhCN": "明翼庄园",
-          "zhTW": "亮翼莊園"
-        },
-        "Saltheril's Haven": {
-          "style": "normal",
-          "fontSize": 60,
-          "position": [1740, 1280],
-          "zhCN": "萨瑟利尔庄园",
-          "zhTW": "薩瑟里的避風港"
-        },
-        "Thas'minella": {
-          "style": "normal",
-          "fontSize": 60,
-          "position": [2245, 1385],
-          "zhCN": "萨斯米内拉",
-          "zhTW": "薩斯米內拉"
-        },
-        "Sanctum of the Moon": {
-          "style": "normal",
-          "fontSize": 60,
-          "position": [1550, 1700],
-          "zhCN": "月亮圣殿",
-          "zhTW": "明月聖所"
-        },
-        "Sanctum of the Sun": {
-          "style": "normal",
-          "fontSize": 60,
-          "position": [2055, 1830],
-          "zhCN": "太阳圣殿",
-          "zhTW": "太陽聖所"
-        },
-        "Windrunner Spire": {
-          "style": "normal",
-          "fontSize": 60,
-          "position": [1240, 1960],
-          "zhCN": "风行者之塔",
-          "zhTW": "風行者塔"
-        },
-        "Ruins of Deatholme": {
-          "style": "normal",
-          "fontSize": 60,
-          "position": [1570, 2310],
-          "zhCN": "戴索姆废墟",
-          "zhTW": "死亡之域廢墟"
-        },
-        "Silvermoon": {
-          "style": "ribbon",
-          "fontSize": 72,
-          "position": [2010, 805],
-          "zhCN": "银 月 城",
-          "zhTW": "銀 月 城"
-        },
-        "Isle of Quel'Danas": {
-          "style": "hd-lesser-glow",
-          "fontSize": 120,
-          "position": [2800, 270],
-          "zhCN": "奎尔丹纳斯岛",
-          "zhTW": "奎爾達納斯之島"
-        },
-        "Zul'Aman": {
-          "style": "hd-lesser-glow",
-          "fontSize": 120,
-          "position": [2980, 1700],
-          "zhCN": "祖阿曼",
-          "zhTW": "祖阿曼"
-        },
-        "Eastern Plaguelands": {
-          "style": "hd-lesser-glow",
-          "fontSize": 120,
-          "position": [2325, 2460],
-          "zhCN": "东瘟疫之地",
-          "zhTW": "東瘟疫之地"
-        }
-      }
-    }
-  },
-  {
-    "id": 2397,
-    "basename": "VoidLandsBG"
-  },
-  {
-    "id": 2405,
-    "basename": "Voidstorm",
-    "localization": {
-      "languages": ["zhCN", "zhTW"],
-      "entries": {
-        "Voidscar Arena": {
-          "style": "normal",
-          "fontSize": 60,
-          "position": [1800, 270],
-          "zhCN": "虚痕竞技场",
-          "zhTW": "虛痕競技場"
-        },
-        "Hate Spire": {
-          "style": "normal",
-          "fontSize": 60,
-          "position": [1295, 610],
-          "zhCN": "憎恨尖塔",
-          "zhTW": "憎惡尖塔"
-        },
-        "Shadowguard Point": {
-          "style": "normal",
-          "fontSize": 60,
-          "position": [1280, 920],
-          "zhCN": "影卫营",
-          "zhTW": "影衛崗哨"
-        },
-        "Grief Spire": {
-          "style": "normal",
-          "fontSize": 60,
-          "position": [2515, 910],
-          "zhCN": "哀痛尖塔",
-          "zhTW": "悲慟尖塔"
-        },
-        "Nexus-Point Antius": {
-          "style": "normal",
-          "fontSize": 60,
-          "position": [865, 1250],
-          "zhCN": "节点安提乌斯",
-          "zhTW": "奧核點安提厄斯"
-        },
-        "Master's Perch": {
-          "style": "normal",
-          "fontSize": 60,
-          "position": [1780, 1190],
-          "zhCN": "主宰者之座",
-          "zhTW": "主宰棲所"
-        },
-        "The Voidspire": {
-          "style": "normal",
-          "fontSize": 60,
-          "position": [2290, 1255],
-          "zhCN": "虚影尖塔",
-          "zhTW": "虛無尖塔"
-        },
-        "The Ingress": {
-          "style": "normal",
-          "fontSize": 60,
-          "position": [1485, 1550],
-          "zhCN": "破境之地",
-          "zhTW": "初始地"
-        },
-        "Nexus-Point Xenas": {
-          "style": "normal",
-          "fontSize": 60,
-          "position": [2760, 1510],
-          "zhCN": "节点希纳斯",
-          "zhTW": "奧核點瑟納斯"
-        },
-        "Stormarion Citadel": {
-          "style": "normal",
-          "fontSize": 60,
-          "position": [880, 1860],
-          "zhCN": "斯托玛兰堡垒",
-          "zhTW": "風瑪利昂堡壘"
-        },
-        "Locus Point": {
-          "style": "normal",
-          "fontSize": 60,
-          "position": [1590, 2010],
-          "zhCN": "方位点",
-          "zhTW": "暗域點"
-        },
-        "Obscurion Citadel": {
-          "style": "normal",
-          "fontSize": 60,
-          "position": [2580, 2110],
-          "zhCN": "胧影堡垒",
-          "zhTW": "朧暗堡壘"
-        },
-        "Nexus-Point Mid'Ar": {
-          "style": "normal",
-          "fontSize": 60,
-          "position": [1270, 2350],
-          "zhCN": "节点米达尔",
-          "zhTW": "奧核點米達爾"
-        }
-      }
-    }
-  },
-  {
-    "id": 2413,
-    "basename": "Harandar"
-  },
-  {
-    "id": 2424,
-    "basename": "NewQuelDanas"
-  },
-  {
-    "id": 2432,
-    "basename": "NewQuelDanas"
-  },
-  {
-    "id": 2433,
-    "basename": "MurderRow_A",
-    "localization": {
-      "languages": ["zhCN", "zhTW"],
-      "entries": {
-        "Murder Row": {
-          "style": "ribbon",
-          "fontSize": 32,
-          "position": [510, 42],
-          "zhCN": "密 谋 小 径",
-          "zhTW": "兇 殺 路"
-        }
-      }
-    }
-  },
-  {
-    "id": 2434,
-    "basename": "MurderRow_C",
-    "localization": {
-      "languages": ["zhCN", "zhTW"],
-      "entries": {
-        "Murder Row": {
-          "style": "ribbon",
-          "fontSize": 32,
-          "position": [510, 42],
-          "zhCN": "密 谋 小 径",
-          "zhTW": "兇 殺 路"
-        }
-      }
-    }
-  },
-  {
-    "id": 2435,
-    "basename": "MurderRow_B",
-    "localization": {
-      "languages": ["zhCN", "zhTW"],
-      "entries": {
-        "Murder Row": {
-          "style": "ribbon",
-          "fontSize": 32,
-          "position": [510, 42],
-          "zhCN": "密 谋 小 径",
-          "zhTW": "兇 殺 路"
-        }
-      }
-    }
-  },
-  {
-    "id": 2437,
-    "basename": "NewZulAman"
-  },
-  {
-    "id": 2443,
-    "basename": "SilvermoonFinScenario"
-  },
-  {
-    "id": 2444,
-    "basename": "VoidLandsBG"
-  },
-  {
-    "id": 2492,
-    "basename": "WindrunnerSpire_A",
-    "localization": {
-      "languages": ["zhCN", "zhTW"],
-      "entries": {
-        "Windrunner Spire": {
-          "style": "ribbon",
-          "fontSize": 32,
-          "position": [510, 51],
-          "zhCN": "风 行 者 之 塔",
-          "zhTW": "風 行 者 塔"
-        },
-        "The Promenade": {
-          "style": "normal",
-          "fontSize": 18,
-          "position": [635, 245],
-          "zhCN": "望塔步道",
-          "zhTW": "漫步尖塔"
-        }
-      }
-    }
-  },
-  {
-    "id": 2493,
-    "basename": "WindrunnerSpire_B",
-    "localization": {
-      "languages": ["zhCN", "zhTW"],
-      "entries": {
-        "Windrunner Spire": {
-          "style": "ribbon",
-          "fontSize": 32,
-          "position": [510, 51],
-          "zhCN": "风 行 者 之 塔",
-          "zhTW": "風 行 者 塔"
-        },
-        "Vereesa's Repose": {
-          "style": "normal",
-          "fontSize": 18,
-          "position": [620, 360],
-          "zhCN": "温蕾萨之憩",
-          "zhTW": "凡蕾莎之憩"
-        }
-      }
-    }
-  },
-  {
-    "id": 2494,
-    "basename": "WindrunnerSpire_C",
-    "localization": {
-      "languages": ["zhCN", "zhTW"],
-      "entries": {
-        "Windrunner Spire": {
-          "style": "ribbon",
-          "fontSize": 32,
-          "position": [510, 51],
-          "zhCN": "风 行 者 之 塔",
-          "zhTW": "風 行 者 塔"
-        },
-        "Vereesa's Repose": {
-          "style": "normal",
-          "fontSize": 18,
-          "position": [640, 230],
-          "zhCN": "温蕾萨之憩",
-          "zhTW": "凡蕾莎之憩"
-        }
-      }
-    }
-  },
-  {
-    "id": 2496,
-    "basename": "WindrunnerSpire_D",
-    "localization": {
-      "languages": ["zhCN", "zhTW"],
-      "entries": {
-        "Windrunner Spire": {
-          "style": "ribbon",
-          "fontSize": 32,
-          "position": [510, 51],
-          "zhCN": "风 行 者 之 塔",
-          "zhTW": "風 行 者 塔"
-        },
-        "Sylvanas's Quarters": {
-          "style": "normal",
-          "fontSize": 18,
-          "position": [360, 235],
-          "zhCN": "希尔瓦娜斯的营房",
-          "zhTW": "希瓦娜斯閨房"
-        }
-      }
-    }
-  },
-  {
-    "id": 2497,
-    "basename": "WindrunnerSpire_E",
-    "localization": {
-      "languages": ["zhCN", "zhTW"],
-      "entries": {
-        "Windrunner Spire": {
-          "style": "ribbon",
-          "fontSize": 32,
-          "position": [510, 51],
-          "zhCN": "风 行 者 之 塔",
-          "zhTW": "風 行 者 塔"
-        },
-        "Sylvanas's Quarters": {
-          "style": "normal",
-          "fontSize": 18,
-          "position": [720, 240],
-          "zhCN": "希尔瓦娜斯的营房",
-          "zhTW": "希瓦娜斯閨房"
-        }
-      }
-    }
-  },
-  {
-    "id": 2498,
-    "basename": "WindrunnerSpire_F",
-    "localization": {
-      "languages": ["zhCN", "zhTW"],
-      "entries": {
-        "Windrunner Spire": {
-          "style": "ribbon",
-          "fontSize": 32,
-          "position": [510, 51],
-          "zhCN": "风 行 者 之 塔",
-          "zhTW": "風 行 者 塔"
-        },
-        "Windrunner Vault": {
-          "style": "normal",
-          "fontSize": 18,
-          "position": [785, 235],
-          "zhCN": "风行者宝库",
-          "zhTW": "風行者寶庫"
-        }
-      }
-    }
-  },
-  {
-    "id": 2499,
-    "basename": "WindrunnerSpire_G",
-    "localization": {
-      "languages": ["zhCN", "zhTW"],
-      "entries": {
-        "Windrunner Spire": {
-          "style": "ribbon",
-          "fontSize": 32,
-          "position": [510, 51],
-          "zhCN": "风 行 者 之 塔",
-          "zhTW": "風 行 者 塔"
-        },
-        "The Pinnacle": {
-          "style": "normal",
-          "fontSize": 18,
-          "position": [735, 180],
-          "zhCN": "尖塔顶峰",
-          "zhTW": "尖塔區"
-        }
-      }
-    }
-  },
-  {
-    "id": 2500,
-    "basename": "LightbloomDungeon"
-  },
-  {
-    "id": 2501,
-    "basename": "MaisaraCavernsDungeon"
-  },
-  {
-    "id": 2502,
-    "basename": "Delve_Voidholme_A"
-  },
-  {
-    "id": 2503,
-    "basename": "Delve_TwilightCrypts_A"
-  },
-  {
-    "id": 2504,
-    "basename": "Delve_TwilightCrypts_B"
-  },
-  {
-    "id": 2505,
-    "basename": "Delve_GulfOfMemory_A"
-  },
-  {
-    "id": 2506,
-    "basename": "Delve_ShadowguardPoint"
-  },
-  {
-    "id": 2507,
-    "basename": "Delve_TormentsRise_A"
-  },
-  {
-    "id": 2510,
-    "basename": "Delve_Fungarians_Grudge_A"
-  },
-  {
-    "id": 2511,
-    "basename": "12_Magisters_Terrace_EXT"
-  },
-  {
-    "id": 2513,
-    "basename": "ProveYourWorth_A"
-  },
-  {
-    "id": 2514,
-    "basename": "ProveYourWorth_B"
-  },
-  {
-    "id": 2515,
-    "basename": "12_MagistersTerrace_A"
-  },
-  {
-    "id": 2516,
-    "basename": "12_MagistersTerrace_B"
-  },
-  {
-    "id": 2517,
-    "basename": "12_MagistersTerrace_C"
-  },
-  {
-    "id": 2518,
-    "basename": "12_MagistersTerrace_D"
-  },
-  {
-    "id": 2519,
-    "basename": "12_MagistersTerrace_E"
-  },
-  {
-    "id": 2520,
-    "basename": "12_MagistersTerrace_F"
-  },
-  {
-    "id": 2522,
-    "basename": "Rootlands_Micro_Mega_A"
-  },
-  {
-    "id": 2523,
-    "basename": "Rootlands_Micro_Mega_B"
-  },
-  {
-    "id": 2525,
-    "basename": "Delve_TwilightTunnels_A",
-    "localization": {
-      "languages": ["zhCN", "zhTW"],
-      "entries": {
-        "The Darkway": {
-          "style": "ribbon",
-          "fontSize": 32,
-          "position": [515, 42],
-          "zhCN": "黑 暗 回 廊",
-          "zhTW": "黑 暗 地 道"
-        }
-      }
-    }
-  },
-  {
-    "id": 2526,
-    "basename": "Voidlands_Micro_Abundance_A"
-  },
-  {
-    "id": 2527,
-    "basename": "Voidlands_Micro_Abundance_B"
-  },
-  {
-    "id": 2528,
-    "basename": "Delve_Sunkiller_A"
-  },
-  {
-    "id": 2529,
-    "basename": "VoidspireRaid_A"
-  },
-  {
-    "id": 2530,
-    "basename": "VoidspireRaid_B"
-  },
-  {
-    "id": 2531,
-    "basename": "DreamriftRaid_A",
-    "localization": {
-      "languages": ["zhCN", "zhTW"],
-      "entries": {
-        "The Darkway": {
-          "style": "ribbon",
-          "fontSize": 32,
-          "position": [510, 52],
-          "zhCN": "梦 境 裂 隙",
-          "zhTW": "夢 境 裂 隙"
-        }
-      }
-    }
-  },
-  {
-    "id": 2532,
-    "basename": "DreamriftRaid_B",
-    "localization": {
-      "languages": ["zhCN", "zhTW"],
-      "entries": {
-        "The Darkway": {
-          "style": "ribbon",
-          "fontSize": 32,
-          "position": [510, 52],
-          "zhCN": "梦 境 裂 隙",
-          "zhTW": "夢 境 裂 隙"
-        }
-      }
-    }
-  },
-  {
-    "id": 2533,
-    "basename": "DarkwellRaid_A"
-  },
-  {
-    "id": 2534,
-    "basename": "DarkwellRaid_B"
-  },
-  {
-    "id": 2535,
-    "basename": "Delve_AtalAman_A"
-  },
-  {
-    "id": 2536,
-    "basename": "AtalAmanCity"
+    "id": 2512,
+    "basename": "unexported-thecoiledisle"
   },
   {
     "id": 2537,
-    "basename": "EK_Midnight_Continent",
-    "localization": {
-      "languages": ["zhCN", "zhTW"],
-      "entries": {
-        "Isle of Quel'Danas": {
-          "style": "hd-stroke-glow",
-          "fontSize": 120,
-          "position": [860, 500],
-          "zhCN": "奎尔丹纳斯岛",
-          "zhTW": "奎爾達納斯之島"
-        },
-        "Eversong Woods": {
-          "style": "hd-stroke-glow",
-          "fontSize": 120,
-          "position": [700, 1480],
-          "zhCN": "永歌森林",
-          "zhTW": "永歌森林"
-        },
-        "Zul'Aman": {
-          "style": "hd-stroke-glow",
-          "fontSize": 120,
-          "position": [1880, 1780],
-          "zhCN": "祖阿曼",
-          "zhTW": "祖阿曼"
-        },
-        "Voidstorm": {
-          "style": "hd-stroke",
-          "fontSize": 84,
-          "position": [2050, 815],
-          "zhCN": "虚影风暴",
-          "zhTW": "虛無風暴"
-        },
-        "Harandar": {
-          "style": "hd-stroke",
-          "fontSize": 84,
-          "position": [3140, 630],
-          "zhCN": "哈籁恩达尔",
-          "zhTW": "哈郎達"
-        },
-        "Silvermoon": {
-          "style": "ribbon",
-          "fontSize": 72,
-          "position": [1090, 1112],
-          "zhCN": "银 月 城",
-          "zhTW": "銀 月 城"
-        }
-      }
-    }
+    "basename": "EK_Midnight_Continent"
   },
   {
-    "id": 2541,
-    "basename": "Arcantina"
+    "id": 2588,
+    "basename": "Ulatek_Dungeon_A"
   },
   {
-    "id": 2545,
-    "basename": "Delve_Parhelion"
+    "id": 2589,
+    "basename": "Ulatek_Dungeon_B"
   },
   {
-    "id": 2547,
-    "basename": "Delve_Calamity"
+    "id": 2590,
+    "basename": "UlaTek_Dungeon_C"
   },
   {
-    "id": 2556,
-    "basename": "Nexus_Point_Xenas_A"
+    "id": 2598,
+    "basename": "RitualSite_Lightbloom"
   },
   {
-    "id": 2557,
-    "basename": "12_LegionCommandCenter_A"
+    "id": 2606,
+    "basename": "Ulatek_Raid_A"
   },
   {
-    "id": 2558,
-    "basename": "12_LegionCommandCenter_B"
+    "id": 2607,
+    "basename": "Ulatek_Raid_B"
   },
   {
-    "id": 2564,
-    "basename": "ProveYourWorth_C"
+    "id": 2608,
+    "basename": "Ulatek_Raid_C"
+  },
+  {
+    "id": 2609,
+    "basename": "Ulatek_Raid_D"
+  },
+  {
+    "id": 2610,
+    "basename": "Ulatek_Raid_E"
+  },
+  {
+    "id": 2613,
+    "basename": "UlatekTemple_Micro_Top_A"
+  },
+  {
+    "id": 2635,
+    "basename": "Delve_Ulatek_Sargoth"
+  },
+  {
+    "id": 2636,
+    "basename": "unexported-vaultofrestlessbones"
+  },
+  {
+    "id": 2637,
+    "basename": "unexported-vaultofrestlessbones"
+  },
+  {
+    "id": 2638,
+    "basename": "unexported-profanedmausoleum"
+  },
+  {
+    "id": 2639,
+    "basename": "unexported-cryptofthedenied"
+  },
+  {
+    "id": 2640,
+    "basename": "unexported-vaultofrestlessbones"
+  },
+  {
+    "id": 2641,
+    "basename": "unexported-cryptofthelostwarrior"
+  },
+  {
+    "id": 2642,
+    "basename": "unexported-tombofthelostpriest"
+  },
+  {
+    "id": 2643,
+    "basename": "unexported-cryptofthelostmason"
+  },
+  {
+    "id": 2644,
+    "basename": "unexported-cryptofthedisgraced"
+  },
+  {
+    "id": 2645,
+    "basename": "unexported-vaultofrestlessbones"
   }
 ]
